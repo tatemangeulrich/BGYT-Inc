@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><title>BGYT Inc™ — Admin Core Console</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#313540","on-tertiary":"#00354a","tertiary-container":"#6bccff","on-tertiary-container":"#005575","surface-dim":"#0f131d","inverse-on-surface":"#2c303b","on-tertiary-fixed":"#001e2c","surface-container":"#1c1f2a","on-tertiary-fixed-variant":"#004c69","on-primary-container":"#00566a","outline":"#859399","error-container":"#93000a","on-secondary-fixed":"#001849","surface-variant":"#313540","inverse-primary":"#00677f","surface-bright":"#353944","tertiary":"#b8e3ff","on-secondary":"#002b75","surface-container-low":"#171b26","on-primary":"#003543","error":"#ffb4ab","surface-container-lowest":"#0a0e18","on-surface-variant":"#bbc9cf","on-error-container":"#ffdad6","on-surface":"#dfe2f1","secondary":"#b3c5ff","outline-variant":"#3c494e","primary":"#a5e7ff","primary-fixed-dim":"#47d6ff","on-primary-fixed-variant":"#004e60","primary-container":"#00d2ff","on-primary-fixed":"#001f28","on-error":"#690005","surface-tint":"#47d6ff","on-background":"#dfe2f1","on-secondary-fixed-variant":"#003fa4","inverse-surface":"#dfe2f1","secondary-fixed-dim":"#b3c5ff","secondary-container":"#0266ff","secondary-fixed":"#dae1ff","tertiary-fixed-dim":"#7bd0ff","tertiary-fixed":"#c4e7ff","surface":"#0f131d","surface-container-high":"#262a35","background":"#0f131d"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"margin-mobile":"1.25rem","gutter-mobile":"1rem",margin:"3rem","space-sm":"0.5rem",gutter:"1.5rem","space-md":"1rem","space-xl":"2.5rem","space-lg":"1.5rem","space-xs":"0.25rem"},fontFamily:{"display-hero":["Space Grotesk"],"label-code":["JetBrains Mono"],"body-md":["Geist"],"body-sm":["Geist"],"headline-lg":["Space Grotesk"],"headline-sm":["Space Grotesk"],"label-badge":["JetBrains Mono"],"body-lg":["Geist"],"display-hero-mobile":["Space Grotesk"],"title-md":["Space Grotesk"],"headline-lg-mobile":["Space Grotesk"],"headline-md":["Space Grotesk"]},fontSize:{"display-hero":["4.5rem",{lineHeight:"5rem",letterSpacing:"-0.04em",fontWeight:"700"}],"label-code":["0.8125rem",{lineHeight:"1.25rem",letterSpacing:"0.06em",fontWeight:"500"}],"body-md":["1rem",{lineHeight:"1.6rem",letterSpacing:"-0.01em",fontWeight:"400"}],"body-sm":["0.875rem",{lineHeight:"1.4rem",letterSpacing:"0em",fontWeight:"400"}],"headline-lg":["3rem",{lineHeight:"3.5rem",letterSpacing:"-0.03em",fontWeight:"700"}],"headline-sm":["1.5rem",{lineHeight:"2rem",letterSpacing:"-0.01em",fontWeight:"600"}],"label-badge":["0.75rem",{lineHeight:"1rem",letterSpacing:"0.1em",fontWeight:"600"}],"body-lg":["1.125rem",{lineHeight:"1.75rem",letterSpacing:"-0.01em",fontWeight:"400"}],"display-hero-mobile":["2.75rem",{lineHeight:"3.25rem",letterSpacing:"-0.03em",fontWeight:"700"}],"title-md":["1.125rem",{lineHeight:"1.75rem",letterSpacing:"0em",fontWeight:"600"}],"headline-lg-mobile":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-md":["2rem",{lineHeight:"2.5rem",letterSpacing:"-0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col pt-6 pb-6 shadow-[1px_0_12px_rgba(0,0,0,0.5)]"><div class="px-6 mb-8 flex items-center justify-between"><a class="flex items-center gap-space-sm" data-path="accueil" href="#"><img alt="BGYT Inc Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UefuDemZdQ26-eAXTvLEBG60xQEI7WwvMeYbAUflOKn_UbGHAgU5HckUnx9W3XO422oUXWkAG9TwL7_AvHkFW8W9mQEXs2vzho52wxlZgRlaD6jUE1P22DZ1TDgnYqYrIQIumc_N-HSkh19M8Myc1898N1ixBJ54ugwr893vLWU9vcglOKGpNSHRi38AX3YDQ0kPHmVqR7LEd-QVxhO4szVHF104XzgvJo0QMAHMVvY3VQWaKGdrsBtIQ"/><span class="font-title-md text-title-md text-on-surface">BGYT<span class="text-primary-container font-headline-sm">.</span>Admin</span></a></div><div class="px-6 mb-4"><span class="font-label-badge text-label-badge text-outline uppercase">Noyau &amp; Gestion</span></div><nav class="flex-1 px-4 space-y-1" data-active-classes="bg-surface-container-high text-primary-container font-semibold rounded-lg"><a aria-current="page" class="flex items-center gap-3 px-3 py-2 transition-all bg-surface-container-high text-primary-container font-semibold rounded-lg" data-path="espace-admin" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-body-sm text-body-sm">Vue d'ensemble</span></a><a class="flex items-center gap-3 px-3 py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="gestion-jeux" href="#"><span class="material-symbols-outlined text-[20px]">sports_esports</span><span class="font-body-sm text-body-sm">Catalogue Jeux</span></a><a class="flex items-center gap-3 px-3 py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="gestion-candidatures" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span class="font-body-sm text-body-sm">Candidatures</span></a><a class="flex items-center gap-3 px-3 py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="gestion-communiques" href="#"><span class="material-symbols-outlined text-[20px]">newspaper</span><span class="font-body-sm text-body-sm">Communiqués</span></a><a class="flex items-center gap-3 px-3 py-2 rounded text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-path="telemetrie-serveurs" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-body-sm text-body-sm">Télémétrie Serveurs</span></a></nav><div class="px-4 pt-4 bg-surface-container-low mx-4 rounded"><div class="flex items-center gap-2 mb-2"><span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span><span class="font-label-code text-label-code text-primary uppercase">Root Auth: Active</span></div><a class="flex items-center gap-2 text-on-surface-variant hover:text-error transition-colors font-body-sm text-body-sm" data-path="accueil" href="#"><span class="material-symbols-outlined text-[18px]">logout</span>Retour Site Public</a></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-xl z-40 flex items-center justify-between px-8 shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="flex items-center gap-space-md"><img alt="BGYT Inc Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UefuDemZdQ26-eAXTvLEBG60xQEI7WwvMeYbAUflOKn_UbGHAgU5HckUnx9W3XO422oUXWkAG9TwL7_AvHkFW8W9mQEXs2vzho52wxlZgRlaD6jUE1P22DZ1TDgnYqYrIQIumc_N-HSkh19M8Myc1898N1ixBJ54ugwr893vLWU9vcglOKGpNSHRi38AX3YDQ0kPHmVqR7LEd-QVxhO4szVHF104XzgvJo0QMAHMVvY3VQWaKGdrsBtIQ"/><span class="font-label-code text-label-code text-outline">CLUSTER // EU-CENTRAL-01</span></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-3 py-1 rounded bg-surface-container text-on-surface-variant"><span class="material-symbols-outlined text-[16px]">search</span><span class="font-label-code text-label-code">Rechercher log ou UUID...</span></div><button class="p-1.5 rounded bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-background min-h-screen px-8 py-8"><div class="flex flex-col w-full space-y-8">
+<!-- Atmospheric Glow & Context Strip -->
+<div class="relative overflow-hidden bg-surface-container-low rounded-xl p-6 shadow-xl backdrop-blur-xl">
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-20 -left-20 w-80 h-80 bg-secondary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative flex flex-col xl:flex-row xl:items-center justify-between gap-6 z-10">
+<div class="space-y-2">
+<div class="flex flex-wrap items-center gap-3">
+<span class="font-label-badge text-label-badge px-2.5 py-1 rounded bg-surface-container-highest text-primary font-semibold tracking-wider uppercase">
+            SECURE ACCESS // LEVEL 4
+          </span>
+<div class="flex items-center gap-2 px-3 py-1 rounded bg-surface-container-high text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-code text-label-code text-primary-container font-medium">
+              Serveurs de production: STABLES (Latence moyenne 18ms)
+            </span>
+</div>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+          Portail Administration &amp; Opérations BGYT Inc™
+        </h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-2xl">
+          Supervision temps réel du cluster européen, déploiement des builds certifiés et validation des flux RH de production interactive.
+        </p>
+</div>
+<!-- Admin Identity Block -->
+<div class="flex items-center gap-4 bg-surface-container p-3 rounded-xl shadow-md min-w-[340px]">
+<div class="relative">
+<img class="w-13 h-13 rounded-lg object-cover shadow-sm ring-1 ring-primary-container/30" data-alt="High contrast studio portrait of Alexandre Roy, a tech lead in dark minimalist cyberpunk clothing, dramatic cyan backlight, ultra crisp digital photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgsz53QDocUc95nOMxlWWYr4aWhJ2dYDsTW7ve_QO2CjY3zZYxffxSnJ0Ss7s7fpo4yMotn3T3ByVU95f17gw6fuon67deENILX4YUt9LPW71RDGL9KdY1ow75xzxF5rd1gz8iLXxhnkqnx3MpZUje55aT4wyOekwFa0npcNAvJVtmT6ky5MHCY6U2aNGrNIX4UA6moQAVQRvqK89x5WUTzqGKh4-ZvDK1QqartT_3EOe42CswPzaU"/>
+<span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-primary-container rounded-full border-2 border-surface-container"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface leading-snug">Alexandre Roy</span>
+<span class="font-label-code text-label-code text-on-surface-variant">Super Admin — R&amp;D Lead</span>
+<div class="mt-1 flex items-center gap-1.5 text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+<span class="font-label-badge text-[10px] tracking-wide uppercase">Double Authentification Active (SSL/FIDO2)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- KPI Metrics Grid with Inline Visual Sparklines -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+<!-- Stat 1 -->
+<div class="bg-surface-container-low p-5 rounded-xl shadow-lg relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">Joueurs Connectés</span>
+<span class="p-2 rounded bg-surface-container-high text-primary-container">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">142,890</span>
+<span class="font-label-code text-label-code text-primary-container font-semibold">+12%</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Pic simultané global hebdo</p>
+<!-- Sparkline -->
+<div class="mt-4 h-9 w-full flex items-end gap-1">
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[40%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[55%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[50%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[65%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[60%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[75%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[70%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[85%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[80%]"></div>
+<div class="w-1/12 bg-primary-container/60 rounded-t h-[90%]"></div>
+<div class="w-1/12 bg-primary-container/80 rounded-t h-[95%]"></div>
+<div class="w-1/12 bg-primary-container rounded-t h-[100%] shadow-[0_0_12px_rgba(0,210,255,0.6)]"></div>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="bg-surface-container-low p-5 rounded-xl shadow-lg relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">Téléchargements Launcher</span>
+<span class="p-2 rounded bg-surface-container-high text-secondary">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">84,310</span>
+<span class="font-label-code text-label-code text-secondary font-semibold">Mois en cours</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Version v3.8.4 Windows &amp; macOS</p>
+<!-- Sparkline -->
+<div class="mt-4 h-9 w-full flex items-end gap-1">
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[30%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[42%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[60%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[52%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[68%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[75%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[82%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[78%]"></div>
+<div class="w-1/12 bg-surface-container-highest rounded-t h-[88%]"></div>
+<div class="w-1/12 bg-secondary-fixed-dim/70 rounded-t h-[84%]"></div>
+<div class="w-1/12 bg-secondary-fixed-dim/90 rounded-t h-[92%]"></div>
+<div class="w-1/12 bg-secondary rounded-t h-[98%] shadow-[0_0_12px_rgba(179,197,255,0.5)]"></div>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="bg-surface-container-low p-5 rounded-xl shadow-lg relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">Candidatures R&amp;D</span>
+<span class="p-2 rounded bg-surface-container-high text-tertiary-container">
+<span class="material-symbols-outlined text-[20px]">person_search</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">38</span>
+<span class="font-label-code text-label-code text-tertiary font-semibold">En attente</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">14 seniors UE / 24 confirmés</p>
+<!-- Circular Metric Graphic -->
+<div class="mt-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-code text-[11px] text-on-surface-variant">Tech: 22</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-code text-[11px] text-on-surface-variant">Art: 11</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-label-code text-[11px] text-on-surface-variant">Audio: 5</span>
+</div>
+</div>
+</div>
+<!-- Stat 4 -->
+<div class="bg-surface-container-low p-5 rounded-xl shadow-lg relative overflow-hidden group hover:bg-surface-container transition-all">
+<div class="flex items-center justify-between mb-3">
+<span class="font-label-code text-label-code text-on-surface-variant uppercase">Trafic Web &amp; Visites</span>
+<span class="p-2 rounded bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[20px]">insights</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">620,400</span>
+<span class="font-label-code text-label-code text-primary font-semibold">SEO 98/100</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Portée organique indexée Google</p>
+<div class="mt-4 w-full bg-surface-container-highest rounded-full h-2 overflow-hidden">
+<div class="bg-gradient-to-r from-secondary-container via-primary-container to-primary h-full rounded-full w-[98%] shadow-[0_0_10px_rgba(0,210,255,0.7)]"></div>
+</div>
+</div>
+</div>
+<!-- Main Modules Layout: 2 Columns Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left Column (8 cols): Catalog Management & Candidate Review -->
+<div class="lg:col-span-8 space-y-8">
+<!-- Module 1: Gestion des Jeux & Mises à Jour -->
+<section class="bg-surface-container-low rounded-xl p-6 shadow-xl space-y-6">
+<div class="flex flex-wrap items-center justify-between gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[22px]">sports_esports</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Gestion des Jeux &amp; Mises à jour</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Statut des branches d'intégration continue, serveurs dédiés et builds live.</p>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-3.5 py-2 rounded bg-primary-container text-on-primary font-title-md text-body-sm font-semibold flex items-center gap-2 hover:shadow-[0_0_18px_rgba(0,210,255,0.4)] transition-all" id="btnPatch">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+              Publier un Patch Note
+            </button>
+<button class="px-3 py-2 rounded bg-surface-container-high text-on-surface font-title-md text-body-sm hover:bg-surface-container-highest flex items-center gap-2 transition-all" id="btnMaintenance">
+<span class="material-symbols-outlined text-[18px]">build</span>
+              Mode Maintenance
+            </button>
+<button class="px-3 py-2 rounded bg-surface-container-high text-on-surface font-title-md text-body-sm hover:bg-surface-container-highest flex items-center gap-2 transition-all" id="btnBetaKeys">
+<span class="material-symbols-outlined text-[18px]">key</span>
+              Clés d'Accès Beta
+            </button>
+</div>
+</div>
+<!-- Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-code text-label-code uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l">Titre du Projet</th>
+<th class="py-3 px-4">Version &amp; Branche</th>
+<th class="py-3 px-4">État Opérationnel</th>
+<th class="py-3 px-4">Cluster / Ping</th>
+<th class="py-3 px-4 text-right rounded-r">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent font-body-sm">
+<!-- Game 1 -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-4 px-4 flex items-center gap-3">
+<img class="w-10 h-10 rounded object-cover shadow-sm" data-alt="Chrono-Nexus game icon, glowing sci-fi chronometer portal, dark obsidian cyan palette, game key art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXhgXYJYo0qQ_eEuTm-K-GUZCrznjvOxKHq6ilf7WnChhDVhHgUKLQwm7nz688J027_w_zUthanw-kPBoKPpLLu6Igd5WBKAT3e7jClrsnvCN57jtJC_gAu17s5TtjzwS8ef21SEUe888cczs_0XTvUw47cg_x6Di8uNJHmaTDpazEGHucuY63fNDBi4e3USzjsIBUg6Vkk05wJtkN_iPkar7rmFxhDKbz1uck5v3QZJtwVI1AgdL8"/>
+<div>
+<div class="font-title-md text-title-md text-on-surface">Chrono-Nexus</div>
+<span class="font-label-code text-[11px] text-on-surface-variant">ARPG Spatial Dynamique</span>
+</div>
+</td>
+<td class="py-4 px-4 font-label-code text-label-code text-primary">v2.4.1 (Main-Prod)</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest text-primary-container font-label-badge text-label-badge font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                    PRODUCTION LIVE
+                  </span>
+</td>
+<td class="py-4 px-4 font-label-code text-label-code text-on-surface-variant">EU-FRA (14ms)</td>
+<td class="py-4 px-4 text-right">
+<button class="p-1.5 rounded bg-surface-container-highest text-on-surface-variant hover:text-primary-container transition-colors" title="Paramètres de déploiement">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</td>
+</tr>
+<!-- Game 2 -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-4 px-4 flex items-center gap-3">
+<img class="w-10 h-10 rounded object-cover shadow-sm" data-alt="Aetheria game key visual, ethereal mystical cyber fantasy floating island, ultra detailed cinematic digital rendering" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHYRH8Fwo8tjA94xKaFU9WqgyN53aNQtVHD5_p-tdX9zqfQFM4JMCGzAjQcf_IzlUd_nVOZibIw4irvtdmPdQDcKlGlqa5X7jNYx4NRZ5abVQQgiuY-eN1Pqa6XQk_j0PLS24uALsTrl4bYfNDAgJE3evRYdNE5nHnXJL3kwNapYyqz0SsJFqgVOGIOld3cvE6eRtiD6qGUojhgOeG_TiF8yViVTlpGR47j7_qu8BDf-8SB4wTX3m9"/>
+<div>
+<div class="font-title-md text-title-md text-on-surface">Aetheria</div>
+<span class="font-label-code text-[11px] text-on-surface-variant">Tactical Cyber-MMO</span>
+</div>
+</td>
+<td class="py-4 px-4 font-label-code text-label-code text-secondary">v0.8.2 (Beta-Nightly)</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest text-secondary-fixed font-label-badge text-label-badge font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    BETA PRIVÉE
+                  </span>
+</td>
+<td class="py-4 px-4 font-label-code text-label-code text-on-surface-variant">US-EST (32ms)</td>
+<td class="py-4 px-4 text-right">
+<button class="p-1.5 rounded bg-surface-container-highest text-on-surface-variant hover:text-secondary transition-colors" title="Gestion des invitations">
+<span class="material-symbols-outlined text-[18px]">group_add</span>
+</button>
+</td>
+</tr>
+<!-- Game 3 -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-4 px-4 flex items-center gap-3">
+<img class="w-10 h-10 rounded object-cover shadow-sm" data-alt="Zero-Grav game cover, futuristic anti-gravity modular arena, neon blue engine exhaust, cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALRmq62wBEDmBqQlf8xZ1hrxyp6XJgu8OirQU7RwCklrJILHRulWu6uBttDG2kIQkxdYy9F3oPoykzyTubV4gnIAg-sYYe3s2Eans32_-xHSZq3ptlOI-jVBGRRr7WpDo9zaGmxNqCnDX31098xDNCt669O4wj120t2ZEReCNX-32lK3a7HgmXh4bHOZ_czlQxv9bhuEBT5tpUsdore_XrhiKLYOdlXllvde0fS1X-vae_sHQKvC_0"/>
+<div>
+<div class="font-title-md text-title-md text-on-surface">Zero-Grav</div>
+<span class="font-label-code text-[11px] text-on-surface-variant">FPS Gravitationnel 6v6</span>
+</div>
+</td>
+<td class="py-4 px-4 font-label-code text-label-code text-error">v1.9.0 (Hotfix-Staging)</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest text-error font-label-badge text-label-badge font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                    MAINTENANCE PLANIFIÉE
+                  </span>
+</td>
+<td class="py-4 px-4 font-label-code text-label-code text-on-surface-variant">Cluster Staging</td>
+<td class="py-4 px-4 text-right">
+<button class="p-1.5 rounded bg-surface-container-highest text-on-surface-variant hover:text-error transition-colors" title="Reprogrammer la fenêtre">
+<span class="material-symbols-outlined text-[18px]">history_toggle_off</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Module 2: Candidatures Développeurs & Artistes -->
+<section class="bg-surface-container-low rounded-xl p-6 shadow-xl space-y-5">
+<div class="flex items-center justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">badge</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Gestion des Candidatures Développeurs</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Dossiers techniques soumis via le portail carrières public BGYT.</p>
+</div>
+<span class="font-label-code text-label-code text-outline">Affichage: 3 récents</span>
+</div>
+<div class="space-y-3">
+<!-- Candidate 1 -->
+<div class="p-4 rounded-lg bg-surface-container flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-surface-container-high transition-all">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center font-label-code text-label-code text-primary font-bold">
+                EC
+              </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Éléonore Chen</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-badge text-label-badge uppercase">À Réviser</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Senior C++ Engine &amp; Vulkan Specialist (8 ans exp)</div>
+<div class="flex items-center gap-3 mt-1.5">
+<a class="font-label-code text-[11px] text-primary-container hover:underline flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">code</span> github.com/echen-rendercore
+                  </a>
+<span class="text-outline-variant">•</span>
+<span class="font-label-code text-[11px] text-on-surface-variant">Reçu il y a 2h</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end md:self-center">
+<button class="px-3 py-1.5 rounded bg-surface-container-highest hover:bg-surface-bright text-on-surface font-title-md text-body-sm transition-colors">
+                Dossier Complet
+              </button>
+<button class="px-3 py-1.5 rounded bg-primary-container text-on-primary font-title-md text-body-sm font-semibold hover:shadow-[0_0_12px_rgba(0,210,255,0.4)] transition-all">
+                Planifier Entretien
+              </button>
+</div>
+</div>
+<!-- Candidate 2 -->
+<div class="p-4 rounded-lg bg-surface-container flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-surface-container-high transition-all">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center font-label-code text-label-code text-secondary font-bold">
+                MV
+              </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Marc Van Der Beek</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-label-badge text-label-badge uppercase">Entretien Planifié</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Lead 3D Hard-Surface &amp; Lighting Artist</div>
+<div class="flex items-center gap-3 mt-1.5">
+<a class="font-label-code text-[11px] text-secondary hover:underline flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">brush</span> artstation.com/mvdbeek-concept
+                  </a>
+<span class="text-outline-variant">•</span>
+<span class="font-label-code text-[11px] text-on-surface-variant">Créneau: Demain 14:30</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end md:self-center">
+<button class="px-3 py-1.5 rounded bg-surface-container-highest hover:bg-surface-bright text-on-surface font-title-md text-body-sm transition-colors">
+                Portfolio 3D
+              </button>
+<button class="px-3 py-1.5 rounded bg-secondary-container text-on-secondary-container font-title-md text-body-sm font-semibold transition-all">
+                Lien Google Meet
+              </button>
+</div>
+</div>
+<!-- Candidate 3 -->
+<div class="p-4 rounded-lg bg-surface-container flex flex-col md:flex-row md:items-center justify-between gap-4 hover:bg-surface-container-high transition-all">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded bg-surface-container-highest flex items-center justify-center font-label-code text-label-code text-tertiary font-bold">
+                SR
+              </div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Sarah Rostami</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-tertiary-container font-label-badge text-label-badge uppercase">Validé RH</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Gameplay Network Programmer (Multiplayer Netcode)</div>
+<div class="flex items-center gap-3 mt-1.5">
+<a class="font-label-code text-[11px] text-tertiary-container hover:underline flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[14px]">code</span> github.com/s-rostami-net
+                  </a>
+<span class="text-outline-variant">•</span>
+<span class="font-label-code text-[11px] text-on-surface-variant">Offre transmise</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end md:self-center">
+<button class="px-3 py-1.5 rounded bg-surface-container-highest hover:bg-surface-bright text-on-surface font-title-md text-body-sm transition-colors">
+                Historique RH
+              </button>
+<button class="px-3 py-1.5 rounded bg-surface-container-high text-on-surface-variant font-title-md text-body-sm cursor-not-allowed">
+                En signature
+              </button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column (4 cols): Release Editor, Security Logs & RGPD -->
+<div class="lg:col-span-4 space-y-8">
+<!-- Module 3: Mini Rich-Text Release Editor -->
+<section class="bg-surface-container-low rounded-xl p-6 shadow-xl space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">edit_note</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Communiqués &amp; News</h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Diffusion multilingue synchrone sur launcher et portail BGYT.</p>
+<!-- Form fields -->
+<div class="space-y-3">
+<div>
+<label class="block font-label-code text-label-code text-on-surface-variant mb-1">TITRE DE L'ANNONCE</label>
+<input class="w-full px-3 py-2 rounded bg-surface-container text-on-surface font-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container shadow-inner" type="text" value="Déploiement Hotfix Chrono-Nexus 2.4.1"/>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block font-label-code text-label-code text-on-surface-variant mb-1">LANGUE NATIVE</label>
+<div class="flex rounded bg-surface-container p-1">
+<button class="flex-1 py-1 text-center font-label-code text-[11px] rounded bg-primary-container text-on-primary font-bold">FR</button>
+<button class="flex-1 py-1 text-center font-label-code text-[11px] rounded text-on-surface-variant hover:text-on-surface">EN</button>
+<button class="flex-1 py-1 text-center font-label-code text-[11px] rounded text-on-surface-variant hover:text-on-surface">NL</button>
+</div>
+</div>
+<div>
+<label class="block font-label-code text-label-code text-on-surface-variant mb-1">PROGRAMMATION</label>
+<div class="flex items-center gap-2 bg-surface-container px-3 py-1.5 rounded text-on-surface font-label-code text-[11px]">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>Aujourd'hui 18:00</span>
+</div>
+</div>
+</div>
+<div>
+<label class="block font-label-code text-label-code text-on-surface-variant mb-1">TAGS DE DIFFUSION</label>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-badge text-[10px]">#PATCH-NOTES</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-badge text-[10px]">#SERVERS</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-badge text-[10px]">+ Ajouter</span>
+</div>
+</div>
+<div>
+<label class="block font-label-code text-label-code text-on-surface-variant mb-1">CORPS DU MESSAGE (MARKDOWN)</label>
+<textarea class="w-full p-3 rounded bg-surface-container text-on-surface font-label-code text-label-code focus:outline-none focus:ring-1 focus:ring-primary-container shadow-inner resize-none" rows="4">### Patch 2.4.1 Changelog
+- Optimisation shader compilation Vulkan
+- Fix désynchronisation tickrate en arène 6v6
+- Rafraîchissement des tables de loot ranked</textarea>
+</div>
+<div class="flex items-center justify-between pt-2">
+<button class="font-label-code text-label-code text-on-surface-variant hover:text-on-surface flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">visibility</span> Aperçu Live
+            </button>
+<button class="px-4 py-2 rounded bg-gradient-to-r from-secondary-container to-primary-container text-on-primary font-title-md text-body-sm font-semibold hover:shadow-[0_0_16px_rgba(0,210,255,0.4)] transition-all">
+              Valider &amp; Queue
+            </button>
+</div>
+</div>
+</section>
+<!-- Module 4: Sécurité, Audit Trail & RGPD -->
+<section class="bg-surface-container-low rounded-xl p-6 shadow-xl space-y-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">security</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Sécurité &amp; Audit Trail</h2>
+</div>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<!-- Audit log streams -->
+<div class="space-y-3 font-label-code text-[11px]">
+<div class="p-2.5 rounded bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">key</span>
+<div>
+<p class="text-on-surface">Connexion SuperAdmin IP 192.168.1.1</p>
+<span class="text-on-surface-variant">2FA OK (FIDO2 Token BGYT-KEY-09) • 14:12:08</span>
+</div>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">cloud_upload</span>
+<div>
+<p class="text-on-surface">Patch v2.4.1 déployé sur CDN Frankfurt</p>
+<span class="text-on-surface-variant">Checksum SHA256 validé • 13:45:00</span>
+</div>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[16px] mt-0.5">database</span>
+<div>
+<p class="text-on-surface">Sauvegarde PostgreSQL effectuée</p>
+<span class="text-on-surface-variant">Taille: 7.4 GB — Stockage chiffré AES-256 • 12:00:15</span>
+</div>
+</div>
+</div>
+<!-- RGPD Widget -->
+<div class="p-3.5 rounded-lg bg-surface-container-high border-l-2 border-primary-container">
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-primary-container uppercase">Conformité RGPD / GDPR</span>
+<span class="font-label-code text-[11px] text-primary">ISO/IEC 27001</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-1 font-medium">Registre des données et requêtes d'effacement</p>
+<div class="mt-2 flex items-center justify-between">
+<span class="font-label-code text-label-code text-on-surface-variant">Requêtes utilisateurs en attente :</span>
+<span class="font-label-code text-label-code px-2 py-0.5 rounded bg-surface-container-highest text-primary font-bold">0 en attente</span>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction feedbacks for the dashboard buttons
+  document.getElementById('btnPatch')?.addEventListener('click', () => {
+    alert('BGYT CI/CD Pipeline : Initialisation du déploiement patch automatisé.');
+  });
+  document.getElementById('btnMaintenance')?.addEventListener('click', () => {
+    confirm('Confirmer l\'activation du mode maintenance sur le cluster public BGYT ?');
+  });
+  document.getElementById('btnBetaKeys')?.addEventListener('click', () => {
+    alert('Générateur FIDO2 de 500 clés bêtas temporaires prêt à l\'export.');
+  });
+</script></main></div></body></html>

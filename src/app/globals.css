@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0f131d;
+    color: #dfe2f1;
+    font-family: 'Geist', sans-serif;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+}
+
+/* Custom Minimal Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1f2a;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 210, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00d2ff;
+  box-shadow: 0 0 10px rgba(0, 210, 255, 0.6);
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(11, 15, 25, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Light Mode Overrides */
+html.light body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+html.light .bg-surface-container-lowest {
+  background-color: #ffffff;
+}
+
+html.light .bg-surface-container-low {
+  background-color: #f1f5f9;
+}
+
+html.light .bg-surface-container {
+  background-color: #e2e8f0;
+}
+
+html.light .bg-surface-container-high {
+  background-color: #cbd5e1;
+}
+
+html.light .bg-surface-container-highest {
+  background-color: #94a3b8;
+}
+
+html.light .bg-background {
+  background-color: #f8fafc;
+}
+
+html.light .text-on-surface {
+  color: #0f172a;
+}
+
+html.light .text-on-surface-variant {
+  color: #334155;
+}
+
+html.light .text-outline {
+  color: #64748b;
+}
+
+html.light .border-surface-container-high {
+  border-color: #cbd5e1;
+}
+
+html.light .border-surface-container-highest {
+  border-color: #94a3b8;
+}
+
+html.light .glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}

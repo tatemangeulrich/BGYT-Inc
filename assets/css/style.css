@@ -1,0 +1,175 @@
+/* ==========================================================================
+   BGYT Inc™ — Obsidian Cyber Styling & Micro-Interactions
+   ========================================================================== */
+
+/* Typography Fallback & Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+body {
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Minimalist Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1f2a;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 210, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00d2ff;
+  box-shadow: 0 0 10px rgba(0, 210, 255, 0.6);
+}
+
+/* Cyber Glow Utilities */
+.glow-cyan {
+  box-shadow: 0 0 24px -4px rgba(0, 210, 255, 0.35);
+}
+
+.glow-cyan-lg {
+  box-shadow: 0 0 36px 0 rgba(0, 210, 255, 0.5);
+}
+
+.glow-blue {
+  box-shadow: 0 0 24px -4px rgba(2, 102, 255, 0.4);
+}
+
+.border-glow-cyan {
+  border-color: rgba(0, 210, 255, 0.4);
+  box-shadow: 0 0 12px -2px rgba(0, 210, 255, 0.3);
+}
+
+/* Glassmorphism */
+.glass-panel {
+  background: rgba(11, 15, 25, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+html.light .glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Cyber Scanlines Effect */
+.cyber-scanlines {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 4px;
+}
+
+/* Cyber Chamfer Notches */
+.clip-notch-top-right {
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+}
+
+.clip-notch-bottom-left {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 14px 100%, 0 calc(100% - 14px));
+}
+
+.clip-badge {
+  clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
+}
+
+/* Animations */
+@keyframes cyber-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.08);
+  }
+}
+
+.animate-cyber-pulse {
+  animation: cyber-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes grid-drift {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 40px 40px;
+  }
+}
+
+.cyber-grid-bg {
+  background-image: 
+    linear-gradient(to right, rgba(0, 210, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 210, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Light Theme Overrides */
+html.light body {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+html.light .bg-surface-container-lowest {
+  background-color: #ffffff !important;
+}
+
+html.light .bg-surface-container-low {
+  background-color: #f8fafc !important;
+}
+
+html.light .bg-surface-container {
+  background-color: #f1f5f9 !important;
+}
+
+html.light .bg-surface-container-high {
+  background-color: #e2e8f0 !important;
+}
+
+html.light .bg-surface-container-highest {
+  background-color: #cbd5e1 !important;
+}
+
+html.light .bg-background {
+  background-color: #f8fafc !important;
+}
+
+html.light .text-on-surface {
+  color: #0f172a !important;
+}
+
+html.light .text-on-surface-variant {
+  color: #475569 !important;
+}
+
+html.light .text-outline {
+  color: #64748b !important;
+}
+
+html.light .border-surface-container-highest {
+  border-color: #e2e8f0 !important;
+}
+
+/* Focus Rings */
+input:focus, select:focus, textarea:focus, button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 210, 255, 0.6);
+}
