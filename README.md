@@ -142,3 +142,4 @@ npm start
 ## 📜 Licence & Droits
 
 © 2026 BGYT Inc™. Tous droits réservés. BGYT Inc™, Chrono-Nexus: 2088™, Aetheria: Shattered Realms™ et NetEngine™ sont des marques déposées de BGYT Inc.
+

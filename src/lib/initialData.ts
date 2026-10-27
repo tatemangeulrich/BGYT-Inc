@@ -396,3 +396,4 @@ export const initialSiteSettings: SiteSettings = {
   launcherDownloads: 84310,
   contactEmail: "contact@bgyt-inc.com",
 };
+

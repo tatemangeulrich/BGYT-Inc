@@ -105,3 +105,4 @@ export interface SiteSettings {
   launcherDownloads: number;
   contactEmail: string;
 }
+

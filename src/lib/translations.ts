@@ -12,6 +12,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "nav.careers": "Recrutement",
     "nav.contact": "Contact",
     "nav.faq": "FAQ",
+    "nav.more": "Plus",
     "nav.admin": "Console Admin",
     "nav.search": "Rechercher...",
     "nav.quick_playtest": "Playtest Privé",
@@ -95,6 +96,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "nav.careers": "Careers",
     "nav.contact": "Contact",
     "nav.faq": "FAQ",
+    "nav.more": "More",
     "nav.admin": "Admin Core",
     "nav.search": "Search...",
     "nav.quick_playtest": "Private Playtest",
@@ -178,6 +180,7 @@ export const translations: Record<Language, Record<string, string>> = {
     "nav.careers": "Vacatures",
     "nav.contact": "Contact",
     "nav.faq": "Veelgestelde Vragen",
+    "nav.more": "Meer",
     "nav.admin": "Beheerderspaneel",
     "nav.search": "Zoeken...",
     "nav.quick_playtest": "Besloten Playtest",
@@ -250,3 +253,4 @@ export const translations: Record<Language, Record<string, string>> = {
     "cat.vr_xr": "VR / XR",
   },
 };
+

@@ -34,3 +34,4 @@ if (typeof window !== "undefined" && isFirebaseConfigured) {
 }
 
 export { app, auth, db, googleProvider };
+

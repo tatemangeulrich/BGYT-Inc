@@ -17,3 +17,4 @@ export function formatDate(dateString: string, locale: string = "fr-FR"): string
     return dateString;
   }
 }
+
