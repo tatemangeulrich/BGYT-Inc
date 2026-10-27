@@ -58,7 +58,7 @@
 
 ### 1. Cloner le projet
 \`\`\`bash
-git clone https://github.com/tatemange/BGYT-Inc.git
+git clone https://github.com/tatemangeulrich/BGYT-Inc.git
 cd BGYT-Inc
 \`\`\`
 

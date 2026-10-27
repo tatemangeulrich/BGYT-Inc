@@ -88,7 +88,7 @@ export default function Footer() {
                 <DiscordIcon className="w-4 h-4" />
               </a>
               <a
-                href="https://github.com/tatemange/BGYT-Inc"
+                href="https://github.com/tatemangeulrich/BGYT-Inc"
                 target="_blank"
                 rel="noreferrer"
                 className="w-8 h-8 rounded bg-surface-container-low hover:bg-primary-container hover:text-on-primary flex items-center justify-center transition-all"
